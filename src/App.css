@@ -1,5 +1,11 @@
 .App {
-  text-align: center;
+  display: flex;
+  flex: 1;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-image: url("./assets/background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .App-logo {
