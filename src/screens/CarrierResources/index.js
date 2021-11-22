@@ -1,16 +1,22 @@
 import React from "react";
+import CarrierResourceCard from "../../components/carrierResourceCard";
+import "./carrierResources.css";
+
+const array = [
+  "Android Development",
+  "Web Development",
+  "iOS Development",
+  "Cloud Computing",
+  "Ethical Hacking",
+  "Data Science",
+];
 
 export default function CarrierResources() {
   return (
-    <div
-      style={{
-        flex: 1,
-        backgroundColor: "red",
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <h1>Carrier Resources</h1>
+    <div className="CompanyResourceContainer">
+      {array.map((item) => (
+        <CarrierResourceCard key={item} jobName={item} />
+      ))}
     </div>
   );
 }
